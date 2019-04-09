@@ -188,12 +188,10 @@ if(SHARED)
       PUBLIC ${GRAPHICS}
   )
 
-  if (MSVC)
   target_compile_definitions(raylib
       PRIVATE $<BUILD_INTERFACE:BUILD_LIBTYPE_SHARED>
       INTERFACE $<INSTALL_INTERFACE:USE_LIBTYPE_SHARED>
   )
-  endif ()
 
   set(PKG_CONFIG_LIBS_EXTRA "")
 
