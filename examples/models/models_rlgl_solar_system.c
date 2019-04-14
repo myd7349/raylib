@@ -13,10 +13,10 @@
 
 #include "raylib.h"
 
-#if defined(BUILD_LIBTYPE_SHARED) || defined(USE_LIBTYPE_SHARED)
+//#if defined(BUILD_LIBTYPE_SHARED) || defined(USE_LIBTYPE_SHARED)
     #define RLGL_IMPLEMENTATION
     #define GRAPHICS_API_OPENGL_33
-#endif
+//#endif
 #include "rlgl.h"
 
 //------------------------------------------------------------------------------------
